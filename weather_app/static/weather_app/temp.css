@@ -1,0 +1,100 @@
+/* Reset default margin and padding for html and body */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%); /* Attractive gradient background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+.card {
+    max-width: 600px; /* Increased card size */
+    width: 90%; /* Takes up to 90% of its parent's width */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 15px; /* Rounded corners for card */
+    padding: 10px; /* Increased padding for better spacing inside the card */
+    width: 380px;
+}
+
+/* Search Bar Section Styles */
+.search-container {
+    display: flex; /* Display search bar and button inline */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1; /* Take available space */
+    margin-right: 10px; /* Space between search bar and button */
+    border-radius: 15px; /* Curved corners */
+}
+
+.search-btn {
+    border-radius: 15px; /* Curved corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: #007BFF; /* Default color */
+}
+
+.search-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Weather Icon, Temperature, and City Name Styles */
+.weather-icon {
+    font-size: 80px;
+}
+/* /* Weather image */
+.weather-image {
+    width: 200px;  /* Adjust as per your requirement */
+    height: 200px; /* Adjust as per your requirement */
+}
+
+.temperature {
+    font-weight: bold;
+}
+
+.city-name {
+    color: #555;
+}
+
+/* Details for Wind and Humidity */
+.details {
+    font-size: 18px;
+    display: flex; /* Flex layout for horizontal alignment */
+    justify-content: space-between; /* Space out wind and humidity sections */
+}
+
+.detail-icon {
+    font-size: 36px; /* Modified size for better visual balance */
+    margin-right: 15px; /* Space between icon and value */
+}
+
+.big-value {
+    font-size: 22px; /* Slight adjustment for professional look */
+    font-weight: bold;
+}
+
+.label {
+    display: block;
+    font-size: 16px; /* Adjusted size for a cleaner look */
+    color: #888; /* Muted color for the label */
+}
+
+.detail-section {
+    flex: 1; /* Equal width for wind and humidity sections */
+    display: flex; /* Flex layout for horizontal alignment */
+    align-items: center; /* Vertically aligned */
+    padding: 10px; /* Added padding for better spacing */
+}
